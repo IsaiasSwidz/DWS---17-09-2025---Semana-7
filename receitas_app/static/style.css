@@ -1,11 +1,149 @@
-body { font-family: sans-serif; background-color: #f4f7f6; }
-.container { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
-nav { background-color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-.nav-brand { font-weight: 700; font-size: 1.5rem; color: #2a9d8f; text-decoration: none; }
-.nav-link { text-decoration: none; color: #fff; background-color: #2a9d8f; padding: 0.5rem 1rem; border-radius: 8px; }
-.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
-.card { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); }
-.form-group { margin-bottom: 1.5rem; }
-.form-group label { display: block; margin-bottom: 0.5rem; }
-.form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px; }
-.btn { background-color: #2a9d8f; color: #fff; padding: 0.8rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; }
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #e6f2f0);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background: #2a9d8f;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-brand:hover {
+    color: #ffe066;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2a9d8f;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: #ffe066;
+    color: #222;
+}
+
+/* ===== GRID DE RECEITAS ===== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    margin-bottom: 0.5rem;
+    color: #2a9d8f;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card li {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px dashed #ccc;
+    font-size: 0.95rem;
+}
+
+.card li:last-child {
+    border-bottom: none;
+}
+
+/* ===== FORMULÁRIOS ===== */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #2a9d8f;
+}
+
+/* ===== BOTÕES ===== */
+.btn {
+    display: inline-block;
+    background: #2a9d8f;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #21867a;
+    transform: scale(1.05);
+}
