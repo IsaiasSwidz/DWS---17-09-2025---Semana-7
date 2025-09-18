@@ -1,4 +1,4 @@
-#!/workspaces/DWS---17-09-2025---Semana-7/receitas_app/venv/bin/python3
+#!/workspaces/DWS---17-09-2025---Semana-7/receitas_app/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
